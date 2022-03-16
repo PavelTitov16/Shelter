@@ -19,6 +19,7 @@
     --link-hover: #FAFAFA;
     --title-color: #545454;
     --text-dark: #4C4C4C;
+    --text-light: #B2B2B2;
 }
 
 /* Обнуление */
@@ -437,10 +438,12 @@ body {
     gap: 0 119px;
     justify-content: center;
 }
+
 .help-example {
     margin-top: 55px;
     text-align: center;
 }
+
 .help-subtitle {
     margin-top: 30px;
     font-family: 'Georgia';
@@ -451,11 +454,87 @@ body {
     letter-spacing: 0.06em;
     color: var(--title-color);
 }
-.help-icon{
+
+.help-icon {
     height: 60px;
     width: 60px;
 }
+
 /* Help*/
 
+/* Donate */
+.donation-container {
+    height: 462px;
+    padding: 80px 182px 100px 183px;
+}
 
+.donation-block {
+    display: flex;
+}
 
+.donate-dog {
+    margin: 11px 30px 10px 0;
+}
+
+.donate-title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+}
+
+.donate-subtitle {
+    margin: 20px 0;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+}
+
+.requisites {
+    margin: 20px 0;
+    height: 43px;
+    width: 350px;
+    border-radius: 9px;
+    background: var(--primary-normal);
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.card-number {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+    margin-left: 15px;
+}
+
+.donate-text {
+    width: 380px;
+    font-family: 'Arial';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: var(--text-light);
+}
+
+/* Donate */
