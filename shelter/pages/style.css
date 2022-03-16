@@ -18,7 +18,7 @@
     --link-color: #CDCDCD;
     --link-hover: #FAFAFA;
     --title-color: #545454;
-    --text-dark:  #4C4C4C;
+    --text-dark: #4C4C4C;
 }
 
 /* Обнуление */
@@ -272,10 +272,10 @@ body {
 /* About shelter */
 .info-container {
     height: 588px;
+    padding: 80px 40px 100px 40px;
 }
 
 .info-block {
-    margin: 80px 40px 100px 40px;
     display: flex;
     justify-content: space-between;
     padding: 0 175px;
@@ -293,7 +293,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    
+
 }
 
 .info-title {
@@ -308,6 +308,7 @@ body {
     width: 370px;
     color: var(--title-color);
 }
+
 .info-text {
     font-family: 'Arial';
     font-style: normal;
@@ -316,5 +317,92 @@ body {
     line-height: 160%;
     color: var(--text-dark);
 }
+
 /* About shelter */
+
+/* Pets */
+.pets-container {
+    background-color: var(--color-section);
+    height: 877px;
+    padding: 80px 40px 100px 40px;
+}
+
+.pets-block {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+}
+
+.pets-title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+    width: 400px;
+}
+
+.pets-slider {
+    display: flex;
+    align-items: center;
+    height: 435px;
+}
+
+.sub-button {
+    display: block;
+    width: 52px;
+    height: 52px;
+    border: 2px solid var(--primary-normal);
+    border-radius: 100px;
+    margin: 0 8px;
+}
+
+.pet {
+    width: 270px;
+    height: 435px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 45px;
+}
+
+.pet-name {
+    margin: 30px 0;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+}
+
+.secondary-btn {
+    margin-right: 0;
+    background: var(--secondary-normal);
+    border: 2px solid var(--primary-normal);
+    box-sizing: border-box;
+    border-radius: 100px;
+    width: 187px;
+}
+
+.pet-button {
+    display: block;
+    width: 261px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--color-content);
+    margin-right: 0;
+}
+
+/* Pets */
 
