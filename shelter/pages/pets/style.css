@@ -214,3 +214,152 @@ body {
 }
 
 /* Header */
+
+/* Pets */
+.pets-container {
+    background-color: var(--color-section);
+    height: 1342px;
+    padding: 80px 40px 100px 40px;
+}
+
+.pets-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+
+.pets-title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+    width: 400px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.pets-slider {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 930px;
+}
+
+.pet-card {
+    margin: 15px 0px;
+    width: 270px;
+    height: 435px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.pet-card:hover {
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+
+.pet-name {
+    margin: 30px 0;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+}
+
+.secondary-btn {
+    background: var(--secondary-normal);
+    border: 2px solid var(--primary-normal);
+    border-radius: 100px;
+    height: 52px;
+    width: 187px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 40px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--color-content);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 0;
+    transition: 0.6s;
+}
+
+.secondary-btn:hover {
+    background: var(--secondary-hover);
+}
+
+.pet-button {
+    display: block;
+    width: 261px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--color-content);
+    margin-right: 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.sub-button {
+    display: block;
+    width: 52px;
+    height: 52px;
+    border: 2px solid var(--primary-normal);
+    border-radius: 100px;
+    margin: 0 8px;
+    transition: 0.5s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-button:hover {
+    background: var(--primary-hover);
+}
+
+.sub-button.inactive {
+    background: transparent;
+    border: 2px solid var(--link-color);
+}
+
+.sub-button.active {
+    background: var(--primary-normal);
+
+}
+
+.btn-text {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--color-content);
+}
+
+/* Pets */
