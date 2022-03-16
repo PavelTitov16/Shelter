@@ -340,8 +340,6 @@ body {
     font-weight: 400;
     font-size: 35px;
     line-height: 45px;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--title-color);
@@ -405,4 +403,59 @@ body {
 }
 
 /* Pets */
+
+/* Help*/
+.help-container {
+    height: 611px;
+    padding: 80px 40px 100px 40px;
+}
+
+.help-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.help-title {
+    margin: 0 446px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    width: 308px;
+    color: var(--title-color);
+}
+
+.help-slider {
+    margin: 0 87px;
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 119px;
+    justify-content: center;
+}
+.help-example {
+    margin-top: 55px;
+    text-align: center;
+}
+.help-subtitle {
+    margin-top: 30px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+}
+.help-icon{
+    height: 60px;
+    width: 60px;
+}
+/* Help*/
+
+
 
