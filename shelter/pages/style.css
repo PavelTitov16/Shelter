@@ -160,10 +160,26 @@ body {
 .nav-link {
     color: var(--link-color);
     transition: 0.5s;
+    position: relative;
 }
 
 .nav-link:hover {
     color: var(--link-hover);
+}
+
+.nav-link::after {
+    position: absolute;
+    content: "";
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    width: 0;
+    border-bottom: 3px solid var(--primary-normal);
+    transition: 0.7s ease-in-out;
+}
+
+.nav-link:hover.nav-link::after {
+    width: 100%;
 }
 
 .logo {
@@ -265,7 +281,8 @@ body {
 }
 
 .button:hover {
-    color: var(--primary-hover);
+    background: var(--primary-hover);
+    color: var(--color-content);
 }
 
 /* Start Screen */
@@ -360,9 +377,25 @@ body {
     border: 2px solid var(--primary-normal);
     border-radius: 100px;
     margin: 0 8px;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
-.pet {
+.sub-button:hover {
+    background: var(--primary-hover);
+}
+
+.sub-button.inactive {
+    background: var(--color-base);
+    border: 2px solid var(--link-color);
+}
+
+.sub-button.active {
+    background: var(--primary-normal);
+
+}
+
+.pet-card {
     width: 270px;
     height: 435px;
     display: flex;
@@ -391,6 +424,10 @@ body {
     box-sizing: border-box;
     border-radius: 100px;
     width: 187px;
+}
+
+.secondary-btn:hover {
+    background: var(--secondary-hover);
 }
 
 .pet-button {
@@ -546,13 +583,16 @@ body {
     height: 350px;
     padding: 40px 40px 0 40px;
 }
+
 .footer-container {
     display: flex;
     justify-content: space-between;
 }
+
 .footer-contact {
-    margin: 16px 160px 40px 0;
+    margin: 16px 159px 40px 0;
 }
+
 .footer-title {
     width: 280px;
     font-family: 'Georgia';
@@ -563,15 +603,18 @@ body {
     letter-spacing: 0.06em;
     color: var(--color-base);
 }
+
 .footer-span {
     margin-top: 40px;
     display: flex;
     gap: 20px;
     align-items: center;
 }
+
 .adress {
     margin-top: 33px;
 }
+
 .footer-subtitle {
     font-family: 'Georgia';
     font-style: normal;
@@ -581,8 +624,5 @@ body {
     letter-spacing: 0.06em;
     color: var(--primary-normal);
 }
+
 /* Footer */
-
-
-
-
