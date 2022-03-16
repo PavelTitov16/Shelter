@@ -280,7 +280,7 @@ body {
 }
 
 .secondary-btn {
-    background: var(--secondary-normal);
+    background: transparent;
     border: 2px solid var(--primary-normal);
     border-radius: 100px;
     height: 52px;
@@ -297,7 +297,6 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    border: 0;
     transition: 0.6s;
 }
 

@@ -13,6 +13,7 @@
     --button-active: #F1CDB3;
     --color-border: #F1CDB3;
     --background: #5C5C5C;
+    --header-bg: linear-gradient(95deg, rgb(80, 64, 52), rgb(40, 37, 36));
     --start-bg: linear-gradient(100deg, #504034, #463831, #3b302d, #2f2928, #232222);
     --footer-bg: linear-gradient(111deg, #3e3027, #3e2f2e, #3a2f33, #343035, #313133);
     --link-color: #CDCDCD;
@@ -131,7 +132,7 @@ body {
 
 /* Header */
 .header-container {
-    background: var(--start-bg);
+    background: var(--header-bg);
     display: flex;
     justify-content: space-between;
     padding: 0 40px;
