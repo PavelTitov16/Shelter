@@ -121,19 +121,16 @@ html {
 }
 
 body {
-    max-width: 1440px;
+    max-width: 1280px;
     margin: 0 auto;
     background-color: var(--color-base);
 }
 
 .header-container {
     background: var(--start-bg);
-    position: fixed;
-    width: 100%;
-    max-width: 1440px;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 0 40px;
 }
 
 .nav {
@@ -141,11 +138,10 @@ body {
 }
 
 .nav-list {
+    margin-top: 64px;
     display: flex;
-    gap: 30px;
+    gap: 34px;
     justify-content: flex-end;
-    padding-left: 30px;
-    padding-right: 30px;
 }
 
 .nav-item {
@@ -154,6 +150,7 @@ body {
     font-size: 15px;
     line-height: 50px;
     font-family: 'Arial';
+    letter-spacing: 0.15px;
 }
 
 .nav-link {
@@ -168,8 +165,7 @@ body {
 .logo {
     height: 60px;
     width: 184px;
-    margin-top: 60px;
-    margin-left: 40px;
+    margin-top: 53px;
     transition: 0.3s;
     cursor: pointer;
 }
@@ -180,10 +176,13 @@ body {
     font-weight: 400;
     font-size: 32px;
     line-height: 50px;
+    letter-spacing: 1.75px;
     color: var(--primary-normal);
 }
 
 .header-text {
+    margin-top: 2px;
+    margin-left: 4px;
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
@@ -197,22 +196,23 @@ body {
 
 .start-container {
     background: var(--start-bg);
-    height: 910px;
+    height: 800px;
     display: flex;
     justify-content: space-between;
 }
 
 .dog {
-    margin-top: 180px;
+    margin-top: 60px;
     margin-right: 40px;
     width: 698px;
     height: 728px;
 }
+
 .start-block {
     height: 322px;
     max-width: 460px;
     margin-left: 40px;
-    padding-top: 250px;
+    padding-top: 227px;
 }
 
 .start-title {
@@ -220,7 +220,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 44px;
-    line-height: 50px;
+    line-height: 55px;
     width: 310px;
     color: var(--color-base);
 }
@@ -230,7 +230,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
-    line-height: 30px;
+    line-height: 24px;
     color: var(--link-color);
     margin: 42px 0;
 }
@@ -256,6 +256,6 @@ body {
     transition: 0.5s;
 }
 
-.hire:hover {
+.button:hover {
     color: var(--primary-hover);
 }
