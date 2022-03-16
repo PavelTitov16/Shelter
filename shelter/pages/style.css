@@ -464,6 +464,7 @@ body {
 
 /* Donate */
 .donation-container {
+    background-color: var(--color-section);
     height: 462px;
     padding: 80px 182px 100px 183px;
 }
@@ -538,3 +539,50 @@ body {
 }
 
 /* Donate */
+
+/* Footer */
+.footer {
+    background: var(--footer-bg);
+    height: 350px;
+    padding: 40px 40px 0 40px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-contact {
+    margin: 16px 160px 40px 0;
+}
+.footer-title {
+    width: 280px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    color: var(--color-base);
+}
+.footer-span {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.adress {
+    margin-top: 33px;
+}
+.footer-subtitle {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: var(--primary-normal);
+}
+/* Footer */
+
+
+
+
