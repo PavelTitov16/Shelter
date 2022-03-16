@@ -17,6 +17,8 @@
     --footer-bg: linear-gradient(111deg, #3e3027, #3e2f2e, #3a2f33, #343035, #313133);
     --link-color: #CDCDCD;
     --link-hover: #FAFAFA;
+    --title-color: #545454;
+    --text-dark:  #4C4C4C;
 }
 
 /* Обнуление */
@@ -126,6 +128,7 @@ body {
     background-color: var(--color-base);
 }
 
+/* Header */
 .header-container {
     background: var(--start-bg);
     display: flex;
@@ -194,6 +197,9 @@ body {
     color: var(--color-base)
 }
 
+/* Header */
+
+/* Start Screen */
 .start-container {
     background: var(--start-bg);
     height: 794px;
@@ -260,3 +266,55 @@ body {
 .button:hover {
     color: var(--primary-hover);
 }
+
+/* Start Screen */
+
+/* About shelter */
+.info-container {
+    height: 588px;
+}
+
+.info-block {
+    margin: 80px 40px 100px 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 175px;
+}
+
+.info-pets {
+    width: 300px;
+    height: 408px;
+}
+
+.info-content {
+    margin: 14px 0;
+    width: 430px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+}
+
+.info-title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    width: 370px;
+    color: var(--title-color);
+}
+.info-text {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: var(--text-dark);
+}
+/* About shelter */
+
