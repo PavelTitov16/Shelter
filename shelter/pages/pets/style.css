@@ -124,14 +124,18 @@ html {
 }
 
 body {
-    max-width: 1280px;
     margin: 0 auto;
     background-color: var(--color-base);
 }
 
 /* Header */
-.header-container {
+.header-wrapper {
     background: var(--color-base);
+    width: 100%;
+}
+.header-container {
+    max-width: 1280px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding: 30px 40px;
@@ -219,8 +223,15 @@ body {
 /* Header */
 
 /* Pets */
-.pets-container {
+
+.pets-wrapper {
     background-color: var(--color-section);
+    width: 100%;
+}
+  
+.pets-container {
+    margin: 0 auto;
+    max-width: 1280px;
     height: 1342px;
     padding: 80px 40px 100px 40px;
 }
@@ -360,17 +371,22 @@ body {
 /* Pets */
 
 /* Footer */
-.footer {
+
+.footer-wrapper {
     background: var(--footer-bg);
     height: 350px;
-    padding: 40px 40px 0 40px;
+    width: 100%;
 }
 
 .footer-container {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 40px 40px 0 40px;
+}
+.footer-block {
     display: flex;
     justify-content: space-between;
 }
-
 .footer-contact {
     margin: 16px 159px 40px 0;
 }
@@ -397,6 +413,7 @@ body {
 .footer-span:hover {
     filter: invert(0%) sepia(5%) saturate(4%) hue-rotate(305deg) brightness(108%) contrast(96%);
 }
+
 .adress {
     margin-top: 33px;
 }
