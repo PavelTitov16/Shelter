@@ -175,7 +175,7 @@ body {
     right: 0;
     width: 0;
     border-bottom: 3px solid var(--primary-normal);
-    transition: 0.7s ease-in-out;
+    transition: 0.3s ease-in;
 }
 
 .nav-link:hover.nav-link::after {
@@ -187,6 +187,9 @@ body {
     width: 184px;
     transition: 0.4s;
     cursor: pointer;
+}
+.logo:hover {
+    filter: invert(65%) sepia(5%) saturate(2485%) hue-rotate(326deg) brightness(119%) contrast(98%);
 }
 
 .shelter-title {
@@ -388,8 +391,12 @@ body {
     display: flex;
     gap: 20px;
     align-items: center;
+    transition: 0.3s ease-in-out;
 }
 
+.footer-span:hover {
+    filter: invert(0%) sepia(5%) saturate(4%) hue-rotate(305deg) brightness(108%) contrast(96%);
+}
 .adress {
     margin-top: 33px;
 }
