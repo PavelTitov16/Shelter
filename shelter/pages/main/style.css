@@ -176,7 +176,7 @@ body {
     right: 0;
     width: 0;
     border-bottom: 3px solid var(--primary-normal);
-    transition: 0.7s ease-in-out;
+    transition: 0.3s ease-in;
 }
 
 .nav-link:hover.nav-link::after {
@@ -271,7 +271,6 @@ body {
     line-height: 40px;
     letter-spacing: 0.06em;
     text-align: center;
-    color: var(--color-content);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -279,13 +278,16 @@ body {
     cursor: pointer;
     border: 0;
     transition: 0.6s;
+ 
 }
 
 .button:hover {
     background: var(--primary-hover);
     color: var(--color-content);
 }
-
+.page-link {
+    color: var(--color-content);
+}
 /* Start Screen */
 
 /* About shelter */
@@ -471,7 +473,7 @@ body {
     line-height: 45px;
     letter-spacing: 0.06em;
     text-align: center;
-    width: 308px;
+    width: 310px;
     color: var(--title-color);
 }
 
@@ -523,6 +525,7 @@ body {
 }
 
 .donate-title {
+    width: 300px;
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
