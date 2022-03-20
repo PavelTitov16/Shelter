@@ -1,0 +1,414 @@
+:root {
+    --primary-normal: #F1CDB3;
+    --primary-hover: #FDDCC4;
+    --secondary-normal: #fff;
+    --secondary-hover: #FDDCC4;
+    --color-base: #fff;
+    --color-section: #F6F6F6;
+    --color-text: #000;
+    --color-content: #292929;
+    --button-normal: #fff;
+    --button-hover: #FDDCC4;
+    --button-inactive: rgba(205, 205, 205, 1);
+    --button-active: #F1CDB3;
+    --color-border: #F1CDB3;
+    --background: #5C5C5C;
+    --start-bg: linear-gradient(100deg, #504034, #463831, #3b302d, #2f2928, #232222);
+    --footer-bg: linear-gradient(111deg, #3e3027, #3e2f2e, #3a2f33, #343035, #313133);
+    --link-color: #CDCDCD;
+    --link-hover: #FAFAFA;
+    --title-color: #545454;
+    --text-dark: #4C4C4C;
+    --text-light: #B2B2B2;
+}
+
+/* Обнуление */
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/* Обнуление */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: var(--color-base);
+}
+
+/* Header */
+.header-container {
+    background: var(--color-base);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav-list {
+    margin-top: 16px;
+    display: flex;
+    gap: 34px;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: 'Arial';
+    letter-spacing: 0.15px;
+}
+
+.nav-link {
+    color: var(--title-color);
+    transition: 0.5s;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--color-content);
+}
+
+.nav-link::after {
+    position: absolute;
+    content: "";
+    bottom: -6px;
+    left: 0;
+    right: 0;
+    width: 0;
+    border-bottom: 3px solid var(--primary-normal);
+    transition: 0.7s ease-in-out;
+}
+
+.nav-link:hover.nav-link::after {
+    width: 100%;
+}
+
+.logo {
+    height: 60px;
+    width: 184px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.shelter-title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 1.75px;
+    color: var(--title-color);
+}
+
+.header-text {
+    margin-top: 10px;
+    margin-left: 4px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: var(--color-content);
+}
+
+/* Header */
+
+/* Pets */
+.pets-container {
+    background-color: var(--color-section);
+    height: 1342px;
+    padding: 80px 40px 100px 40px;
+}
+
+.pets-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+
+.pets-title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+    width: 400px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.pets-slider {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 930px;
+}
+
+.pet-card {
+    margin: 15px 0px;
+    width: 270px;
+    height: 435px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.pet-card:hover {
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+
+.pet-name {
+    margin: 30px 0;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+}
+
+.secondary-btn {
+    background: transparent;
+    border: 2px solid var(--primary-normal);
+    border-radius: 100px;
+    height: 52px;
+    width: 187px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 40px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--color-content);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.secondary-btn:hover {
+    background: var(--secondary-hover);
+}
+
+.pet-button {
+    display: block;
+    width: 261px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--color-content);
+    margin-right: 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.sub-button {
+    display: block;
+    width: 52px;
+    height: 52px;
+    border: 2px solid var(--primary-normal);
+    border-radius: 100px;
+    margin: 0 8px;
+    transition: 0.5s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-button:hover {
+    background: var(--primary-hover);
+}
+
+.sub-button.inactive {
+    background: transparent;
+    border: 2px solid var(--link-color);
+}
+
+.sub-button.active {
+    background: var(--primary-normal);
+
+}
+
+.btn-text {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--color-content);
+}
+
+/* Pets */
+
+/* Footer */
+.footer {
+    background: var(--footer-bg);
+    height: 350px;
+    padding: 40px 40px 0 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-contact {
+    margin: 16px 159px 40px 0;
+}
+
+.footer-title {
+    width: 280px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    color: var(--color-base);
+}
+
+.footer-span {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.adress {
+    margin-top: 33px;
+}
+
+.footer-subtitle {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: var(--primary-normal);
+}
+
+/* Footer */
