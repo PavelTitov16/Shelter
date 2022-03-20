@@ -125,17 +125,23 @@ html {
 }
 
 body {
-    max-width: 1280px;
     margin: 0 auto;
     background-color: var(--color-base);
 }
 
 /* Header */
-.header-container {
+
+.header-wrapper {
     background: var(--header-bg);
+    width: 100%;
+}
+
+.header-container {
+    max-width: 1280px;
     display: flex;
     justify-content: space-between;
     padding: 0 40px;
+    margin: 0 auto;
 }
 
 .nav {
@@ -187,13 +193,9 @@ body {
     height: 60px;
     width: 184px;
     margin-top: 53px;
-    transition: 0.1s ease-in-out;
     cursor: pointer;
 }
 
-.logo:hover {
-    filter: invert(50%) sepia(5%) saturate(2485%) hue-rotate(326deg) brightness(119%) contrast(98%);
-}
 
 .shelter-title {
     font-family: 'Georgia';
@@ -203,9 +205,11 @@ body {
     line-height: 50px;
     letter-spacing: 1.75px;
     color: var(--primary-normal);
+    transition: 0.3s ease-in-out;
 }
 
 .header-text {
+    position: relative;
     margin-top: 2px;
     margin-left: 4px;
     font-family: 'Arial';
@@ -216,14 +220,44 @@ body {
     display: flex;
     align-items: center;
     letter-spacing: 0.1em;
-    color: var(--color-base)
+    color: var(--color-base);
+    transition: 0.3s;
+}
+
+.header-text::after {
+    position: absolute;
+    content: "";
+    bottom: -6px;
+    left: 0;
+    right: 0;
+    width: 0;
+    border-bottom: 3px solid var(--primary-normal);
+    transition: 0.3s ease-in;
+}
+
+.logo:hover h1 {
+    color: var(--primary-hover);
+}
+
+.logo:hover p {
+    color: var(--link-hover);
+}
+
+.logo:hover p::after {
+    width: 100%;
 }
 
 /* Header */
 
 /* Start Screen */
-.start-container {
+.start-wrapper {
     background: var(--start-bg);
+    width: 100%;
+}
+
+.start-container {
+    margin: 0 auto;
+    max-width: 1280px;
     height: 794px;
     display: flex;
     justify-content: space-between;
@@ -294,7 +328,13 @@ body {
 /* Start Screen */
 
 /* About shelter */
+.info-wrapper {
+    width: 100%;
+}
+
 .info-container {
+    margin: 0 auto;
+    max-width: 1280px;
     height: 588px;
     padding: 80px 40px 100px 40px;
 }
@@ -345,8 +385,14 @@ body {
 /* About shelter */
 
 /* Pets */
-.pets-container {
+.pets-wrapper {
+    width: 100%;
     background-color: var(--color-section);
+}
+
+.pets-container {
+    margin: 0 auto;
+    max-width: 1280px;
     height: 877px;
     padding: 80px 40px 100px 40px;
 }
@@ -456,7 +502,13 @@ body {
 /* Pets */
 
 /* Help*/
+.pets-wrapper {
+    width: 100%;
+}
+
 .help-container {
+    margin: 0 auto;
+    max-width: 1280px;
     height: 611px;
     padding: 80px 40px 100px 40px;
 }
@@ -513,8 +565,14 @@ body {
 /* Help*/
 
 /* Donate */
-.donation-container {
+.donation-wrapper {
+    width: 100%;
     background-color: var(--color-section);
+}
+
+.donation-container {
+    margin: 0 auto;
+    max-width: 1280px;
     height: 462px;
     padding: 80px 182px 100px 183px;
 }
@@ -579,7 +637,7 @@ body {
 }
 
 .requisites:hover {
-    filter: invert(85%) sepia(52%) saturate(184%) hue-rotate(331deg) brightness(102%) contrast(98%);
+    background: var(--primary-hover);
 }
 
 .donate-text {
@@ -597,13 +655,20 @@ body {
 /* Donate */
 
 /* Footer */
-.footer {
+
+.footer-wrapper {
     background: var(--footer-bg);
     height: 350px;
-    padding: 40px 40px 0 40px;
+    width: 100%;
 }
 
 .footer-container {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 40px 40px 0 40px;
+}
+
+.footer-block {
     display: flex;
     justify-content: space-between;
 }
