@@ -176,7 +176,7 @@ body {
     right: 0;
     width: 0;
     border-bottom: 3px solid var(--primary-normal);
-    transition: 0.7s ease-in-out;
+    transition: 0.3s ease-in;
 }
 
 .nav-link:hover.nav-link::after {
@@ -187,8 +187,12 @@ body {
     height: 60px;
     width: 184px;
     margin-top: 53px;
-    transition: 0.4s;
+    transition: 0.1s ease-in-out;
     cursor: pointer;
+}
+
+.logo:hover {
+    filter: invert(50%) sepia(5%) saturate(2485%) hue-rotate(326deg) brightness(119%) contrast(98%);
 }
 
 .shelter-title {
@@ -270,8 +274,8 @@ body {
     font-size: 17px;
     line-height: 40px;
     letter-spacing: 0.06em;
-    text-align: center;
     color: var(--color-content);
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -279,6 +283,7 @@ body {
     cursor: pointer;
     border: 0;
     transition: 0.6s;
+
 }
 
 .button:hover {
@@ -409,6 +414,7 @@ body {
     margin: 0 45px;
     transition: all 0.4s ease-in-out;
 }
+
 .pet-card:hover {
     box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
@@ -439,7 +445,6 @@ body {
 }
 
 .pet-button {
-    display: block;
     width: 261px;
     line-height: 22px;
     letter-spacing: 0.06em;
@@ -471,7 +476,7 @@ body {
     line-height: 45px;
     letter-spacing: 0.06em;
     text-align: center;
-    width: 308px;
+    width: 310px;
     color: var(--title-color);
 }
 
@@ -523,6 +528,7 @@ body {
 }
 
 .donate-title {
+    width: 300px;
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -556,6 +562,7 @@ body {
     display: flex;
     align-items: center;
     padding: 10px 15px;
+    transition: 0.4s ease-in;
 }
 
 .card-number {
@@ -569,6 +576,10 @@ body {
     letter-spacing: 0.06em;
     color: var(--title-color);
     margin-left: 15px;
+}
+
+.requisites:hover {
+    filter: invert(85%) sepia(52%) saturate(184%) hue-rotate(331deg) brightness(102%) contrast(98%);
 }
 
 .donate-text {
@@ -617,6 +628,11 @@ body {
     display: flex;
     gap: 20px;
     align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+.footer-span:hover {
+    filter: invert(0%) sepia(5%) saturate(4%) hue-rotate(305deg) brightness(108%) contrast(96%);
 }
 
 .adress {
@@ -632,4 +648,5 @@ body {
     letter-spacing: 0.06em;
     color: var(--primary-normal);
 }
+
 /* Footer */
