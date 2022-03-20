@@ -270,6 +270,7 @@ body {
     font-size: 17px;
     line-height: 40px;
     letter-spacing: 0.06em;
+    color: var(--color-content);
     text-align: center;
     display: flex;
     justify-content: center;
@@ -285,9 +286,7 @@ body {
     background: var(--primary-hover);
     color: var(--color-content);
 }
-.page-link {
-    color: var(--color-content);
-}
+
 /* Start Screen */
 
 /* About shelter */
@@ -441,7 +440,6 @@ body {
 }
 
 .pet-button {
-    display: block;
     width: 261px;
     line-height: 22px;
     letter-spacing: 0.06em;
@@ -559,6 +557,7 @@ body {
     display: flex;
     align-items: center;
     padding: 10px 15px;
+    transition: 0.4s ease-in;
 }
 
 .card-number {
@@ -620,6 +619,7 @@ body {
     display: flex;
     gap: 20px;
     align-items: center;
+    transition: 0.4s ease-in;
 }
 
 .adress {

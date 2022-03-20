@@ -321,6 +321,13 @@ body {
 }
 
 .sub-button {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: var(--color-content);
     display: block;
     width: 52px;
     height: 52px;
@@ -333,7 +340,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+      
 .sub-button:hover {
     background: var(--primary-hover);
 }
@@ -345,20 +352,6 @@ body {
 
 .sub-button.active {
     background: var(--primary-normal);
-
-}
-
-.btn-text {
-    font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: var(--color-content);
 }
 
 /* Pets */
