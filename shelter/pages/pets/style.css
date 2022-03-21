@@ -141,18 +141,18 @@ body {
     padding: 30px 40px;
 }
 
-.nav {
+.header-nav {
     margin-left: auto;
 }
 
-.nav-list {
+.header-nav__list {
     margin-top: 16px;
     display: flex;
     gap: 34px;
     justify-content: flex-end;
 }
 
-.nav-item {
+.header-nav__item {
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -161,17 +161,17 @@ body {
     letter-spacing: 0.15px;
 }
 
-.nav-link {
+.header-nav__link {
     color: var(--title-color);
     transition: 0.5s;
     position: relative;
 }
 
-.nav-link:hover {
+.header-nav__link:hover {
     color: var(--color-content);
 }
 
-.nav-link::after {
+.header-nav__link::after {
     position: absolute;
     content: "";
     bottom: -6px;
@@ -182,21 +182,21 @@ body {
     transition: 0.3s ease-in;
 }
 
-.nav-link:hover.nav-link::after {
+.header-nav__link:hover.header-nav__link::after {
     width: 100%;
 }
 
-.logo {
+.header-logo {
     height: 60px;
     width: 184px;
     transition: 0.4s;
     cursor: pointer;
 }
-.logo:hover {
+.header-logo:hover {
     filter: invert(65%) sepia(5%) saturate(2485%) hue-rotate(326deg) brightness(119%) contrast(98%);
 }
 
-.shelter-title {
+.header-logo__title {
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -206,7 +206,7 @@ body {
     color: var(--title-color);
 }
 
-.header-text {
+.header-logo__text {
     margin-top: 10px;
     margin-left: 4px;
     font-family: 'Arial';
@@ -243,7 +243,7 @@ body {
     gap: 45px;
 }
 
-.pets-title {
+.pets-block__title {
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -258,7 +258,7 @@ body {
     text-align: center;
 }
 
-.pets-slider {
+.pets-block__slider {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -281,7 +281,7 @@ body {
     box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 
-.pet-name {
+.pet-card__name {
     margin: 30px 0;
     font-family: 'Georgia';
     font-style: normal;
@@ -293,7 +293,7 @@ body {
     color: var(--title-color);
 }
 
-.secondary-btn {
+.pet-card__btn {
     background: transparent;
     border: 2px solid var(--primary-normal);
     border-radius: 100px;
@@ -314,27 +314,17 @@ body {
     transition: 0.6s;
 }
 
-.secondary-btn:hover {
+.pet-card__btn:hover {
     background: var(--secondary-hover);
 }
 
-.pet-button {
-    display: block;
-    width: 261px;
-    line-height: 22px;
-    letter-spacing: 0.06em;
-    text-align: center;
-    color: var(--color-content);
-    margin-right: 0;
-}
-
-.buttons {
+.pets-block__buttons {
     display: flex;
     justify-content: center;
     gap: 5px;
 }
 
-.sub-button {
+.pets-block__button {
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -355,16 +345,20 @@ body {
     align-items: center;
 }
       
-.sub-button:hover {
+.pets-block__button:hover {
     background: var(--primary-hover);
 }
 
-.sub-button.inactive {
+.pets-block__button.inactive {
     background: transparent;
     border: 2px solid var(--link-color);
 }
 
-.sub-button.active {
+.pets-block__button.inactive img {
+    filter: invert(80%) sepia(0%) saturate(1267%) hue-rotate(229deg) brightness(98%) contrast(94%);
+}
+
+.pets-block__button.active {
     background: var(--primary-normal);
 }
 
@@ -383,15 +377,17 @@ body {
     max-width: 1280px;
     padding: 40px 40px 0 40px;
 }
+
 .footer-block {
     display: flex;
     justify-content: space-between;
 }
-.footer-contact {
+
+.footer-contacts {
     margin: 16px 159px 40px 0;
 }
 
-.footer-title {
+.footer-contacts__title {
     width: 280px;
     font-family: 'Georgia';
     font-style: normal;
@@ -402,7 +398,7 @@ body {
     color: var(--color-base);
 }
 
-.footer-span {
+.footer-contacts__link {
     margin-top: 40px;
     display: flex;
     gap: 20px;
@@ -410,7 +406,7 @@ body {
     transition: 0.3s ease-in-out;
 }
 
-.footer-span:hover {
+.footer-contacts__link:hover {
     filter: invert(0%) sepia(5%) saturate(4%) hue-rotate(305deg) brightness(108%) contrast(96%);
 }
 
@@ -418,7 +414,7 @@ body {
     margin-top: 33px;
 }
 
-.footer-subtitle {
+.footer-contacts__subtitle {
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
