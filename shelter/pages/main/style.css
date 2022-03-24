@@ -13,7 +13,7 @@
     --button-active: #F1CDB3;
     --color-border: #F1CDB3;
     --background: #5C5C5C;
-    --header-bg: linear-gradient(95deg, rgb(80, 64, 52), rgb(40, 37, 36));
+    --header-bg: linear-gradient(100deg, #504034, #473931, #3e322e, #312a29, #272424);
     --start-bg: linear-gradient(100deg, #504034, #463831, #3b302d, #2f2928, #232222);
     --footer-bg: linear-gradient(111deg, #3e3027, #3e2f2e, #3a2f33, #343035, #313133);
     --link-color: #CDCDCD;
@@ -189,6 +189,20 @@ body {
     width: 100%;
 }
 
+.header-nav__link.active {
+    color: var(--link-hover);
+}
+
+.header-nav__link.active::after {
+    position: absolute;
+    content: "";
+    bottom: -6px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 3px solid var(--primary-normal);
+}
+
 .header-logo {
     height: 60px;
     width: 184px;
@@ -201,6 +215,7 @@ body {
     gap: 10px;
     align-items: center;
 }
+
 .header-logo__title {
     font-family: 'Georgia';
     font-style: normal;
