@@ -130,6 +130,7 @@ body {
 
 /* Header */
 .header-wrapper {
+    position: fixed;
     background: var(--color-base);
     width: 100%;
 }
@@ -289,6 +290,7 @@ body {
     align-items: center;
     text-align: center;
     transition: all 0.4s ease-in-out;
+    cursor: pointer;
 }
 
 .pet-card:hover {
@@ -331,7 +333,9 @@ body {
 .pet-card__btn:hover {
     background: var(--secondary-hover);
 }
-
+.pet-card:hover .pet-card__btn {
+    background: var(--secondary-hover);
+}
 .pets-block__buttons {
     display: flex;
     justify-content: center;
@@ -366,6 +370,7 @@ body {
 .pets-block__button.inactive {
     background: transparent;
     border: 2px solid var(--link-color);
+    cursor: default;
 }
 
 .pets-block__button.inactive img {
