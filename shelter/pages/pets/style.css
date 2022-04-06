@@ -331,7 +331,9 @@ body {
 .pet-card__btn:hover {
     background: var(--secondary-hover);
 }
-
+.pet-card__btn:hover.pets-block__button {
+    background: var(--primary-hover);
+}
 .pets-block__buttons {
     display: flex;
     justify-content: center;
@@ -366,6 +368,7 @@ body {
 .pets-block__button.inactive {
     background: transparent;
     border: 2px solid var(--link-color);
+    cursor: default;
 }
 
 .pets-block__button.inactive img {
