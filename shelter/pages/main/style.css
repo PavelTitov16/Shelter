@@ -441,6 +441,7 @@ body {
     display: block;
     width: 52px;
     height: 52px;
+    background: transparent;
     border: 2px solid var(--primary-normal);
     border-radius: 100px;
     margin: 0 8px;
@@ -453,6 +454,7 @@ body {
 
 .sub-button:hover {
     background: var(--primary-hover);
+    border: 2px solid var(--primary-hover);
 }
 
 .sub-button.inactive {
@@ -462,7 +464,7 @@ body {
 
 .sub-button.active {
     background: var(--primary-normal);
-
+    border: 2px solid var(--primary-normal);
 }
 
 .pets-card {
@@ -474,10 +476,16 @@ body {
     text-align: center;
     margin: 0 45px;
     transition: all 0.4s ease-in-out;
+    cursor: pointer;
 }
 
 .pets-card:hover {
     box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+
+.pets-card:hover .secondary-btn {
+    background: var(--secondary-hover);
+    border: 2px solid var(--secondary-hover);
 }
 
 .pets-card__name {
@@ -503,6 +511,7 @@ body {
 
 .secondary-btn:hover {
     background: var(--secondary-hover);
+    border: 2px solid var(--secondary-hover);
 }
 
 .pets-block__button {
@@ -559,6 +568,8 @@ body {
 .help-item {
     margin-top: 55px;
     text-align: center;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
 }
 
 .help-item__subtitle {
@@ -572,11 +583,13 @@ body {
     color: var(--title-color);
 }
 
-.hhelp-item__icon {
+.help-item__icon {
     height: 60px;
     width: 60px;
 }
-
+.help-item:hover {
+    transform: scale(1.5);
+}
 /* Help*/
 
 /* Donate */
@@ -708,7 +721,7 @@ body {
     display: flex;
     gap: 20px;
     align-items: center;
-    transition: 0.3s ease-in-out;
+    transition: all 0.2s ease;
 }
 
 .footer-contacts__link:hover {

@@ -130,7 +130,8 @@ body {
 
 /* Header */
 .header-wrapper {
-    position: fixed;
+    position: sticky;
+    top: 0;
     background: var(--color-base);
     width: 100%;
 }
@@ -332,9 +333,11 @@ body {
 
 .pet-card__btn:hover {
     background: var(--secondary-hover);
+    border: 2px solid var(--secondary-hover);
 }
 .pet-card:hover .pet-card__btn {
     background: var(--secondary-hover);
+    border: 2px solid var(--secondary-hover);
 }
 .pets-block__buttons {
     display: flex;
@@ -365,6 +368,7 @@ body {
       
 .pets-block__button:hover {
     background: var(--primary-hover);
+    border: 2px solid var(--primary-hover);
 }
 
 .pets-block__button.inactive {
@@ -379,6 +383,7 @@ body {
 
 .pets-block__button.active {
     background: var(--primary-normal);
+    border: 2px solid var(--primary-normal);
 }
 
 /* Pets */
@@ -422,7 +427,7 @@ body {
     display: flex;
     gap: 20px;
     align-items: center;
-    transition: 0.3s ease-in-out;
+    transition: all 0.2s ease;
 }
 
 .footer-contacts__link:hover {
