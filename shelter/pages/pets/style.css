@@ -58,7 +58,6 @@ aside {
 
 html,
 body {
-    height: 100%;
     width: 100%;
     font-size: 100%;
     line-height: 1;
@@ -122,6 +121,7 @@ h6 {
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 body {
