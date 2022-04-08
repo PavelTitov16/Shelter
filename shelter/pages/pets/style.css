@@ -427,7 +427,7 @@ body {
     display: flex;
     gap: 20px;
     align-items: center;
-    transition: 0.3s ease-in-out;
+    transition: all 0.2s ease;
 }
 
 .footer-contacts__link:hover {
