@@ -803,6 +803,36 @@ body {
         padding-top: 80px;
         order: 2;
     }
+
+    .pets-container {
+        padding: 80px 30px 100px 30px;
+    }
+
+    .pets-block__slider {
+        display: flex;
+        width: 708px;
+        gap: 0;
+    }
+    
+    .pets-card {
+        margin: 0 17px;
+    }
+
+    .pets-card.inactive {
+        display: none;
+    }
+
+    .secondary-btn {
+        margin: 0 20px;
+    }
+
+    .pets-block__button {
+        margin: 0;
+    }
+
+    .sub-button {
+        margin: 0;
+    }
 /*
 
 
