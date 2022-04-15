@@ -372,7 +372,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 25px;
-
 }
 
 .about-block__title {
@@ -590,6 +589,7 @@ body {
     height: 60px;
     width: 60px;
 }
+
 .help-item:hover {
     transform: scale(1.5);
 }
@@ -782,7 +782,29 @@ body {
         height: 593px;
     }
 
+    .about-container {
+        height: 1048px;
+        padding: 80px 165px 100px 165px;
+    }
+
+    .about-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-block__content {
+        order: 1;
+        margin: 0;
+    }
+
+    .about-block__image {
+        padding-top: 80px;
+        order: 2;
+    }
 /*
+
 
 */
 
