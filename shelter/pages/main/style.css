@@ -848,8 +848,100 @@ body {
         width: 170px;
     }
 
+    .donation-container {
+        height: 783px;
+        padding: 80px 132px 100px 132px;
+    }
+
+    .donation-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .donation-content {
+        padding: 0 62px;
+    }
+    .donation-block__image {
+        order: 2;
+        margin-top: 60px;
+    }
+
+  
 /*
 
+
+
+
+
+
+
+
+.donation-content__title {
+    width: 300px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+}
+
+.donation-content__subtitle {
+    margin: 20px 0;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+}
+
+.donation-content__link {
+    margin: 20px 0;
+    height: 43px;
+    width: 350px;
+    border-radius: 9px;
+    background: var(--primary-normal);
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    transition: 0.4s ease-in;
+}
+
+.donation-content__number {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+    margin-left: 15px;
+}
+
+.donation-content__link:hover {
+    background: var(--primary-hover);
+}
+
+.donation-block__text {
+    width: 380px;
+    font-family: 'Arial';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: var(--text-light);
+}
 
 
 
