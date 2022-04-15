@@ -333,7 +333,6 @@ body {
     cursor: pointer;
     border: 0;
     transition: 0.6s;
-
 }
 
 .button:hover {
@@ -755,8 +754,35 @@ body {
         padding: 30px 30px 0 30px;
     }
   
-/*
+    .hero-container {
+        height: 1075px;
+        display: flex;
+        flex-direction: column;
+        padding: 60px 0 0 100px;
+    }
 
+    .hero-block {
+        margin: 0 55px 100px 55px;
+    }
+
+    .hero-block__text {
+        margin-top: 44px;
+    }
+
+    .button {
+        margin: 40px 10px 0 125px;
+    }
+
+    .hero-block__image {
+        padding-left: 70px;
+    }
+
+    .hero-block__image img {
+        width: 569px;
+        height: 593px;
+    }
+
+/*
 
 */
 
