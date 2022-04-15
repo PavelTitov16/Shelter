@@ -388,6 +388,7 @@ body {
 .pets-block__button.active {
     background: var(--primary-normal);
     border: 2px solid var(--primary-normal);
+    cursor: default;
 }
 
 /* Pets */
