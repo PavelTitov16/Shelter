@@ -810,8 +810,7 @@ body {
 
     .pets-block__slider {
         display: flex;
-        width: 708px;
-        gap: 0;
+        
     }
     
     .pets-card {
@@ -823,7 +822,7 @@ body {
     }
 
     .secondary-btn {
-        margin: 0 20px;
+        margin: 0;
     }
 
     .pets-block__button {
@@ -833,7 +832,25 @@ body {
     .sub-button {
         margin: 0;
     }
+
+    .help-container {
+        height: 779px;
+        padding: 80px 69px 100px 69px;
+    }
+
+    .help-block__slider {
+        margin: 0;
+        margin-top: 5px;
+        gap: 0 60px;
+    }
+
+    .help-item {
+        width: 170px;
+    }
+
 /*
+
+
 
 
 */
