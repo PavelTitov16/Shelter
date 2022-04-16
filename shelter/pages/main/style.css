@@ -1075,16 +1075,38 @@ body {
 
     .pets-container {
         width: 320px;
-        padding: 80px 30px 100px 30px;
+        height: 791px;
+        padding: 42px 10px;
+    }
+
+    .pets-block {
+        gap: 0;
+        height: 707px;
+    }
+    
+    .pets-block__title {
+        margin: 0px;
+        font-size: 25px;
+        line-height: 32px;
+        width: 300px;
     }
 
     .pets-block__slider {
-        display: flex;
-        
+        height: 507px;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;
+        margin-bottom: 42px;
     }
     
     .pets-card {
-        margin: 0 17px;
+        margin: 0;
+        margin-top: 42px;
+        order: -1;
+    }
+
+    .pets-card.disabled {
+        display: none;
     }
 
     .pets-card.inactive {
@@ -1097,10 +1119,11 @@ body {
 
     .pets-block__button {
         margin: 0;
+        margin-top: 42px;
     }
 
     .sub-button {
-        margin: 0;
+        margin: 0 40px;
     }
 
     .help-container {
@@ -1175,38 +1198,6 @@ body {
 }
 /*
 
-.about-container {
-    margin: 0 auto;
-    max-width: 1280px;
-    height: 588px;
-    padding: 80px 40px 100px 40px;
-}
-
-.about-block {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 175px;
-}
-
-
-.about-block__content {
-    margin: 14px 0;
-    width: 430px;
-    height: 380px;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-
-.about-block__text {
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 160%;
-    color: var(--text-dark);
-}
 
 
                     <div class="shadow-box"></div>
