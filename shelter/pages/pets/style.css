@@ -455,12 +455,14 @@ body {
 
 /* Footer */
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1279px) {
     .header-container {
+        width: 768px;
         padding: 30px;
     }
 
     .pets-container {
+        width: 768px;
         height: 1733px;
         padding: 80px 30px 70px 30px;
     }
@@ -493,12 +495,13 @@ body {
     }
 
     .footer-container {
+        width: 768px;
         padding: 30px 30px 0 30px;
     }
 
     .footer-block {
         flex-wrap: wrap;
-        justify-content:flex-start;
+        justify-content: center;
         gap: 65px 0;
     }
 
@@ -506,15 +509,12 @@ body {
         width: 305px;
         height: 234px;
         margin: 0 18px;
-        padding: 0 15px;
+        padding: 0 6px;
+        
     }
     .maps {
         width: 315px;
         padding-right: 0;
-    }
-    .footer-contacts__link {
-        margin-top: 40px;
-        margin-right: 35px;
     }
 
     .adress {
@@ -522,9 +522,9 @@ body {
         margin-right: 0;
     }
 
-    .footer-block img {
+    .footer-block__img {
         display: block;
-        margin: 0 auto;
+       
     }
 }
 
