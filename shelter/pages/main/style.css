@@ -866,83 +866,45 @@ body {
         margin-top: 60px;
     }
 
-  
+    .footer-wrapper {
+        height: 639px;
+    }
+
+    .footer-container {
+        padding: 30px 30px 0 30px;
+    }
+
+    .footer-block {
+        flex-wrap: wrap;
+        justify-content:flex-start;
+        gap: 65px 0;
+    }
+
+    .footer-contacts {
+        width: 305px;
+        height: 234px;
+        margin: 0 18px;
+        padding: 0 15px;
+    }
+    .maps {
+        width: 315px;
+        padding-right: 0;
+    }
+    .footer-contacts__link {
+        margin-top: 40px;
+        margin-right: 35px;
+    }
+
+    .adress {
+        margin-top: 33px;
+        margin-right: 0;
+    }
+
+    .footer-block img {
+        display: block;
+        margin: 0 auto;
+    }
 /*
-
-
-
-
-
-
-
-
-.donation-content__title {
-    width: 300px;
-    font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 45px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.06em;
-    color: var(--title-color);
-}
-
-.donation-content__subtitle {
-    margin: 20px 0;
-    font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 17px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.06em;
-    color: var(--title-color);
-}
-
-.donation-content__link {
-    margin: 20px 0;
-    height: 43px;
-    width: 350px;
-    border-radius: 9px;
-    background: var(--primary-normal);
-    display: flex;
-    align-items: center;
-    padding: 10px 15px;
-    transition: 0.4s ease-in;
-}
-
-.donation-content__number {
-    font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.06em;
-    color: var(--title-color);
-    margin-left: 15px;
-}
-
-.donation-content__link:hover {
-    background: var(--primary-hover);
-}
-
-.donation-block__text {
-    width: 380px;
-    font-family: 'Arial';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
-    color: var(--text-light);
-}
-
 
 
 */
