@@ -488,6 +488,44 @@ body {
         display: none;
     }
 
+    .footer-wrapper {
+        height: 639px;
+    }
+
+    .footer-container {
+        padding: 30px 30px 0 30px;
+    }
+
+    .footer-block {
+        flex-wrap: wrap;
+        justify-content:flex-start;
+        gap: 65px 0;
+    }
+
+    .footer-contacts {
+        width: 305px;
+        height: 234px;
+        margin: 0 18px;
+        padding: 0 15px;
+    }
+    .maps {
+        width: 315px;
+        padding-right: 0;
+    }
+    .footer-contacts__link {
+        margin-top: 40px;
+        margin-right: 35px;
+    }
+
+    .adress {
+        margin-top: 33px;
+        margin-right: 0;
+    }
+
+    .footer-block img {
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 
