@@ -457,12 +457,41 @@ body {
 
 @media (max-width: 768px) {
     .header-container {
-        
         padding: 30px;
+    }
+
+    .pets-container {
+        height: 1733px;
+        padding: 80px 30px 70px 30px;
+    }
+
+    .pets-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 34px;
+        gap: 35px;
+    }
+
+    .pets-block__slider {
+        justify-content: center;
+        height: 1365px;
+        gap: 30px;
+    }
+
+    .pet-card {
+        margin: 0 5px;
+        padding-bottom: 60px;
+    }
+
+    .pet-card.inactive {
+        display: none;
+    }
+
 }
 
-/*
 
+/*
 
 
 */
