@@ -547,6 +547,10 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+    main {
+        overflow-x: hidden;
+    }
+
     .header-container {
         padding: 30px 53px 30px 10px;
         width: 320px;
@@ -717,14 +721,3 @@ body {
     }
 
 }
-
-
-/*
-
-
-
- main {
-        overflow-x: hidden;
-      }
-
-*/
