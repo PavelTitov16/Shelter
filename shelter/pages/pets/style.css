@@ -582,7 +582,7 @@ body {
 
     .header-nav {
         z-index: 4;
-        position: absolute;
+        position: fixed;
         right: -620px;
         gap: 0;
         top: 0;
@@ -612,9 +612,63 @@ body {
     .header-logo {
         z-index: 5;
     }
+    .pets-container {
+        width: 320px;
+        height: 1649px;
+        padding: 42px 10px;
+    }
+
+    .pets-block {
+        gap: 0;
+    }
+    
+    .pets-block__title {
+        margin: 0px;
+        font-size: 25px;
+        line-height: 32px;
+        width: 300px;
+    }
+
+    .pets-block__slider {
+        height: 1365px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0px;
+        margin-bottom: 30px;
+        margin-top: 12px;
+    }
+    
+    .pet-card {
+        margin: 0;
+        order: -1;
+        padding-bottom: 0;
+        margin-top: 30px;
+    }
+
+    .pet-card.disabled {
+        display: none;
+    }
+
+    .pet-card.inactive {
+        display: none;
+    }
+
+    .pets-block__buttons {
+        margin-top: 42px;
+    }
+
+    .pets-block__button {
+        margin: 0 3px;
+    }
+
+
+
 }
 
 /*
+
+
+
  main {
         overflow-x: hidden;
       }
