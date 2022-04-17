@@ -966,7 +966,7 @@ body {
 
     .header-nav {
         z-index: 4;
-        position: fixed;
+        position: absolute;
         right: -620px;
         gap: 0;
         top: 0;
@@ -993,7 +993,9 @@ body {
     .header-nav.active {
         right: 0;
     }
-
+    .header-logo {
+        z-index: 5;
+    }
     .hero-container {
         height: 734px;
         width: 320px;
@@ -1298,14 +1300,7 @@ body {
 }
 /*
 
- 
-
 
 
 */
 
-   
-/*    
-@media (min-width: 768px) and (max-width: 1279px) {
-    @media (max-width: 768px) {
-*/
