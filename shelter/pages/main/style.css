@@ -1259,7 +1259,7 @@ body {
         width: 278px;
         height: 208px;
         margin: 0 auto;
-        padding: 0 15px;
+        padding: 0 13px;
     }
 
     .footer-contacts__title {
@@ -1269,12 +1269,14 @@ body {
         width: 250px;
         margin: 0 auto;
     }
-
+    .tel {
+        padding: 0 6px;
+    }
     .maps {
         margin-top: 40px;
         width: 300px;
         padding: 0;
-        margin-bottom: 13px;
+        margin-bottom: 55px;
     }
 
     .adress {
@@ -1282,23 +1284,17 @@ body {
         margin-right: 0;
     }
 
-    .footer-block__img {
-        display: block;
-        width: 50px;
-        height: 50px;
-    }
-
-    .footer-block__img img {
-        margin-top: 42px;
+    .footer-block__item {
+        margin: 0 auto;
         width: 260px;
-        display: block;
         height: 269px;
-        margin-inline: auto;
     }
 
-}
+    .footer-block__item img {
+        width: 100%;
+        height: 100%;
+    }
 
-   
 }
 /*
 
