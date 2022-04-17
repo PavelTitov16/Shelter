@@ -924,10 +924,6 @@ body {
         margin-top: 33px;
         margin-right: 0;
     }
-
-    .footer-block__img {
-        display: block;
-    }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -1165,7 +1161,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         gap: 0;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .help-item {
@@ -1209,27 +1205,30 @@ body {
     .donation-content__subtitle {
         font-size: 15px;
         line-height: 24px;
-        letter-spacing: 0em;
+        letter-spacing: 0;
         margin: 0 auto;
         margin-top: 20px;
+        padding: 0 13px;
     }
 
     .donation-content__link {
         height: 43px;
-        width: 281px;
+        width: 282px;
         margin: 20px auto;
     }
 
     .donation-content__number {
         font-size: 15px;
         line-height: 17px;
+        width: 282px;
     }
     
     .donation-block__text {
         margin: 0 auto;
         width: 280px;
+        text-align: justify;
     }
-
+  
     .donation-block__image {
         order: 2;
         margin: 0 auto;
@@ -1282,6 +1281,22 @@ body {
         margin-top: 40px;
         margin-right: 0;
     }
+
+    .footer-block__img {
+        display: block;
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer-block__img img {
+        margin-top: 42px;
+        width: 260px;
+        display: block;
+        height: 269px;
+        margin-inline: auto;
+    }
+
+}
 
    
 }
