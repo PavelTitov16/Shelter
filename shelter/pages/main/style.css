@@ -1184,23 +1184,60 @@ body {
 
     .donation-container {
         width: 320px;
-        height: 783px;
-        padding: 80px 132px 100px 132px;
+        height: 541.2px;
+        padding: 33px 10px;
     }
 
     .donation-block {
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
-    .donation-content {
-        padding: 0 62px;
+    .donation-content__title {
+        font-size: 25px;
+        line-height: 32px;
+        width: 220px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 8px;
     }
+
+    .donation-content__subtitle {
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0em;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .donation-content__link {
+        height: 43px;
+        width: 281px;
+        margin: 20px auto;
+    }
+
+    .donation-content__number {
+        font-size: 15px;
+        line-height: 17px;
+    }
+    
+    .donation-block__text {
+        margin: 0 auto;
+        width: 280px;
+    }
+
     .donation-block__image {
         order: 2;
-        margin-top: 60px;
+        margin: 0 auto;
+        margin-top: 42px;
     }
-
+    
+    .donation-block__image img{
+        width: 260px;
+        height: auto;
+    }
+    
     .footer-wrapper {
         height: 639px;
     }
@@ -1238,10 +1275,7 @@ body {
 }
 /*
 
-
-
-
-                    
+ 
 
 
 
