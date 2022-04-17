@@ -954,7 +954,8 @@ body {
     }
 
     .shadow-box.active {
-        background: rgba(41, 41, 41, 0.6);
+        background:#000;
+        opacity:0.5;
         display: block;
         z-index: 3;
         position: fixed;
