@@ -978,21 +978,20 @@ body {
         background-size: auto;
         width: 320px;
         height: 100%;
-        text-align: flex-start;
+        text-align: center;
         transition: all 0.3s;
     }
 
     .header-nav__list {
         flex-direction: column;
-        margin-top: 135px;
-        margin-left: 95px;
-        gap: 16.5px;
-        justify-content: flex-start;
+        margin-top: 247px;
+        gap: 40px;
+        justify-content: center;
     }
 
     .header-nav__item {
-        font-size: 35px;
-        line-height: 72px;
+        font-size: 32px;
+        line-height: 51px;
     }
 
     .header-nav.active {
