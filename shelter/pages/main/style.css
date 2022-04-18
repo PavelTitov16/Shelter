@@ -283,6 +283,10 @@ body {
 .shadow-box {
     display: none;
 }
+
+.header-logo.hidden {
+    display: none;
+}
 /* Header */
 
 /* Start Screen */
@@ -930,6 +934,10 @@ body {
     main {
         overflow-x: hidden;
       }
+    
+    .header-wrapper {
+        position: relative;
+    }
 
     .header-container {
         padding: 30px 53px 0 10px;
@@ -937,6 +945,8 @@ body {
     }
 
     .header-menu {
+        position: absolute;
+        right: 53px;
         display: block;
         z-index: 5;
     }
@@ -966,6 +976,7 @@ body {
     }
 
     .header-nav {
+        padding: 30px 10px;
         z-index: 4;
         position: fixed;
         right: -620px;
@@ -981,7 +992,7 @@ body {
 
     .header-nav__list {
         flex-direction: column;
-        margin-top: 247px;
+        margin-top: 161.5px;
         gap: 40px;
         justify-content: center;
     }
@@ -994,9 +1005,12 @@ body {
     .header-nav.active {
         right: 0;
     }
-    .header-logo {
+
+    .header-logo.hidden {
         z-index: 5;
+        display: block;
     }
+    
     .hero-container {
         height: 734px;
         width: 320px;
