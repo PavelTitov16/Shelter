@@ -269,6 +269,7 @@ body {
     margin-top: 11px;
     display: none;
     cursor: pointer;
+    transition: all 0.4s;
 }
 
 .header-menu__bar {
@@ -277,7 +278,7 @@ body {
     height: 2px;
     margin: 8px auto;
     background: var(--primary-normal);
-    transition: all 0.4s;
+    
 }
 
 .shadow-box {
@@ -548,6 +549,71 @@ body {
 }
 
 /* Pets */
+
+/* Pop-Up */
+.popup-wrapper {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.popup {
+    width: 952px;
+    height: 552px;
+    margin: 0 auto;
+    background: transparent
+}
+
+.popup-button {
+    width: 52px;
+    height: 52px;
+    border-radius: 26px;
+    border: 2px solid var(--primary-normal);
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.popup-button:hover {
+    background: var(--primary-hover);
+    border: 2px solid var(--primary-hover);
+}
+
+.popup-block {
+    width: 900px;
+    height: 500px;
+    background-color: var(--color-base);
+    padding: 40px;
+    text-align: center;
+    font-size: 23px;
+    display: flex;
+}
+
+.popup-wrapper.active {
+    display: block;
+}
+
+
+.popup-content {
+    margin: 50px 20px 88px 30px;
+}
+
+.popup-content__title {
+    margin-bottom: 10px;
+}
+
+.popup-content__subtitle {
+    margin: 40px 0;
+}
+/* Pop-Up */
 
 /* Help*/
 .help-wrapper {
@@ -951,8 +1017,11 @@ body {
         z-index: 5;
     }
 
-    .header-menu.active .header-menu__bar:nth-child(2) {
-        transform: translateX(10px) rotate(-90deg);
+    .header-menu.active {
+        transform: rotate(-90deg);
+    }
+    /*.header-menu.active .header-menu__bar:nth-child(2) {
+        transform: translateX(-10px) rotate(-90deg);
     }
 
     .header-menu.active .header-menu__bar:nth-child(1) {
@@ -960,8 +1029,8 @@ body {
     }
 
     .header-menu.active .header-menu__bar:nth-child(3) {
-        transform: translateX(-10px) translateY(-10px) rotate(-90deg);
-    }
+        transform: translateX(10px) translateY(-10px) rotate(-90deg);
+    }*/
 
     .shadow-box.active {
         background:#000;
@@ -1315,5 +1384,13 @@ body {
         width: 100%;
         height: 100%;
     }
-
 }
+
+
+/*
+
+
+
+
+
+*/

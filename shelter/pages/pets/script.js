@@ -18,3 +18,4 @@ navLinks.forEach(navLink => navLink.addEventListener('click', () => {
     shdwBox.classList.remove('active');
 
 }));
+
