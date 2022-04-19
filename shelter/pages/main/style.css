@@ -22,6 +22,7 @@
     --text-dark: #4C4C4C;
     --text-light: #B2B2B2;
     --card-bg: #FAFAFA;
+    --modal-bg: rgba(41, 41, 41, 0.6);
 }
 
 /* Обнуление */
@@ -428,6 +429,7 @@ body {
 }
 
 .pets-container {
+    position: relative;
     margin: 0 auto;
     max-width: 1280px;
     height: 877px;
@@ -560,6 +562,7 @@ body {
     bottom: 0;
     width: 100%;
     height: 100%;
+    background: var(--modal-bg);
     display: none;
 }
 
@@ -567,19 +570,22 @@ body {
     width: 952px;
     height: 552px;
     margin: 0 auto;
-    background: transparent
+    background: transparent;
+    display: flex;
+    flex-direction: column;
 }
 
 .popup-button {
     width: 52px;
     height: 52px;
-    border-radius: 26px;
+    border-radius: 100px;
     border: 2px solid var(--primary-normal);
     background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.3s;
+    align-self: flex-end;
 }
 
 .popup-button:hover {
@@ -591,7 +597,7 @@ body {
     width: 900px;
     height: 500px;
     background-color: var(--color-base);
-    padding: 40px;
+    border-radius: 9px;
     text-align: center;
     font-size: 23px;
     display: flex;
@@ -601,18 +607,72 @@ body {
     display: block;
 }
 
+.popup-block__item{
+    width: 500px;
+    height: 500px;
+}
+
+.popup-block__item img {
+    width: 100%;
+    height: 100%;
+}
 
 .popup-content {
     margin: 50px 20px 88px 30px;
+    text-align: left;
 }
 
 .popup-content__title {
     margin-bottom: 10px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    color: var(--color-text);
 }
+
+.popup-content h4 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: var(--color-text);
+}
+
 
 .popup-content__subtitle {
     margin: 40px 0;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.06em;
+    color: var(--color-text);
 }
+
+.popup-list__item {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.06em;
+    color: var(--color-text);
+    margin-top: 10px;
+}
+
+.popup-list__item::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    color: var(--primary-normal);
+}
+
 /* Pop-Up */
 
 /* Help*/
