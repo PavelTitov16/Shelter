@@ -1057,6 +1057,10 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+    .shelter-page.lock {
+        overflow-y: hidden;
+    }
+
     main {
         overflow-x: hidden;
       }
