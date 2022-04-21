@@ -1,4 +1,4 @@
-[
+const pets = [
   {
     "name": "Jennifer",
     "img": "../../assets/images/pets-jennifer.png",
@@ -88,3 +88,4 @@
     "parasites": ["lice", "fleas"]
   }
 ]
+export default pets;
