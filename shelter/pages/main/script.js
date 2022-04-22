@@ -15,13 +15,6 @@ function openMenu() {
   page.classList.add('lock');
 }
 
-function lockPage() {
-  if (page.classList.contains('lock')) {
-    page.classList.remove('lock');
-  } else
-    page.classList.add('lock');
-}
-
 function closeMenu() {
   adaptiveMenu.classList.remove('active');
   nav.classList.remove('active');
@@ -46,6 +39,51 @@ shdwBox.addEventListener('click', () => {
   }
 });
 /* Adaptive Menu */
+
+/* Pop Up */
+
+const popClosers =  document.querySelectorAll('[data-type]');
+const petWrapper = document.querySelector('.popup-wrapper');
+let petInfo = document.querySelector('.popup-block');
+
+function createPop(obj) {
+  pets.forEach(pet => {
+    if (pet.name === obj.dataset.name) {
+      petInfo.innerHTML =
+        `<div class="popup-block__item inactive">
+                <img src="${pet.img}" alt="${pet.name}">
+            </div>
+            <div class="popup-block__item">
+                <div class="popup-content">
+                    <h3 class="popup-content__title">${pet.name}</h3>
+                    <h4>${pet.type} - ${pet.breed}</h4>
+                    <h5 class="popup-content__subtitle">${pet.description}</h5>
+                    <ul class="popup-list">
+                        <li class="popup-list__item">
+                            <div><b>Age: </b>${pet.age}</div>
+                        </li>
+                        <li class="popup-list__item">
+                            <div><b>Inoculations: </b>${pet.inoculations}</div>
+                        </li>
+                        <li class="popup-list__item">
+                            <div><b>Diseases: </b>${pet.diseases}</div>
+                        </li>
+                        <li class="popup-list__item">
+                            <div><b>Parasites: </b>${pet.parasites}</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>`;
+    }
+  });
+}
+  
+popClosers.forEach(closer => {
+  closer.addEventListener('click', () => {
+  petWrapper.classList.remove('active');
+  page.classList.remove('lock');
+})});
+/* Pop Up */
 
 /* Slider */
 const slider = document.querySelector('.pets-block__slider');
@@ -96,7 +134,7 @@ function createCard() {
   let currentSlider = [];
   for (let i = 0; i < sliderLength; i++) {
     while (newSlider.length < sliderLength) {
-      let number = Math.floor(Math.random() * 8);
+      let number = Math.floor(Math.random() * pets.length);
       if (!newSlider.includes(pets[number]) && !currentSlider.includes(pets[number])) {
         let pet = pets[number];
         newSlider.push(pet);
@@ -117,6 +155,15 @@ function createCard() {
   }
   petsContainer.innerHTML = petCard;
   newSlider = [];
+
+  const cards = document.querySelectorAll('[data-name]');
+  
+  cards.forEach(card => card.addEventListener('click', (event) => {
+    createPop(event.target);
+    console.log(event.target.dataset.name);
+    petWrapper.classList.add('active');
+    page.classList.add('lock');
+  }));
 }
 
 createCard();
@@ -128,58 +175,5 @@ next.addEventListener('click', () => {
 prev.addEventListener('click', () => {
   createCard();
 });
-
-/* Pop Up */
-
-const cards = document.querySelectorAll('[data-name]');
-const modalButton = document.querySelector('.popup-button');
-const petWrapper = document.querySelector('.popup-wrapper');
-let petInfo = document.querySelector('.popup-block');
-
-function createPop(obj) {
-  pets.forEach(pet => {
-    if (pet.name === obj.dataset.name) {
-      petInfo.innerHTML =
-        `<div class="popup-block__item inactive">
-                <img src="${pet.img}" alt="${pet.name}">
-            </div>
-            <div class="popup-block__item">
-                <div class="popup-content">
-                    <h3 class="popup-content__title">${pet.name}</h3>
-                    <h4>${pet.type} - ${pet.breed}</h4>
-                    <h5 class="popup-content__subtitle">${pet.description}</h5>
-                    <ul class="popup-list">
-                        <li class="popup-list__item">
-                            <div><b>Age: </b>${pet.age}</div>
-                        </li>
-                        <li class="popup-list__item">
-                            <div><b>Inoculations: </b>${pet.inoculations}</div>
-                        </li>
-                        <li class="popup-list__item">
-                            <div><b>Diseases: </b>${pet.diseases}</div>
-                        </li>
-                        <li class="popup-list__item">
-                            <div><b>Parasites: </b>${pet.parasites}</div>
-                        </li>
-                    </ul>
-                </div>
-            </div>`;
-    }
-  });
-  petWrapper.classList.add('active');
-  lockPage();
-
-  modalButton.addEventListener('click', () => {
-    petWrapper.classList.remove('active');
-    lockPage();
-  });
-}
-
-cards.forEach(card => card.addEventListener('click', (event) => {
-  createPop(event.target);
-  console.log(event.target.dataset.name);
-}));
-
-/* Pop Up */
 
 

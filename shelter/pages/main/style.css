@@ -595,10 +595,10 @@ body {
     align-self: flex-end;
 }
 
-.popup-wrapper:hover .popup-button {
+/*.popup:hover .popup-button {
     background: var(--primary-hover);
     border: 2px solid var(--primary-hover);
-}
+}*/
 
 .popup-button:hover {
     background: var(--primary-hover);

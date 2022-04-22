@@ -22,6 +22,17 @@ const pets = [
     "parasites": ["none"]
   },
   {
+    "name": "Oliver",
+    "img": "../../assets/images/pets-oliver.png",
+    "type": "Dog",
+    "breed": "Corgi Pembroke",
+    "description": "Oliver is a smart and funny playfull dog, likes sheepherding. He knows many comands and tricks to make watchers happy. Oliver is a reliable travel companion and socially oriented to people. His main live goal to make you happy.",
+    "age": "2 years",
+    "inoculations": ["complex", "rabies"],
+    "diseases": ["none"],
+    "parasites": ["none"]
+  },
+  {
     "name": "Woody",
     "img": "../../assets/images/pets-woody.png",
     "type": "Dog",
@@ -33,6 +44,17 @@ const pets = [
     "parasites": ["none"]
   },
   {
+    "name": "Nord",
+    "img": "../../assets/images/pets-nord.png",
+    "type": "Dog",
+    "breed": "Samoyed",
+    "description": "Nord...",
+    "age": "1 year",
+    "inoculations": ["complex", "rabies"],
+    "diseases": ["none"],
+    "parasites": ["none"]
+  },
+  {
     "name": "Scarlett",
     "img": "../../assets/images/pets-scarlet.png",
     "type": "Dog",
@@ -40,6 +62,17 @@ const pets = [
     "description": "Scarlett is a happy, playful girl who will make you laugh and smile. She forms a bond quickly and will make a loyal companion and a wonderful family dog or a good companion for a single individual too since she likes to hang out and be with her human.",
     "age": "3 months",
     "inoculations": ["parainfluenza"],
+    "diseases": ["none"],
+    "parasites": ["none"]
+  },
+  {
+    "name": "Kapusta",
+    "img": "../../assets/images/pets-cabbage.png",
+    "type": "Cat",
+    "breed": "mestizo",
+    "description": "Hello! My name is Kapusta, I am 5 years old and most of all in the world I love myself and eat delicious food. I live in a big house with a couple of bipeds (annoying, but fun to spend time with). I am in charge of the control and auditing department in the field of purchasing bugs with wet food, fresh meat and fish. I don't like impudent plush mice and cockchafers.",
+    "age": "5 years",
+    "inoculations": ["complex", "rabies"],
     "diseases": ["none"],
     "parasites": ["none"]
   },
