@@ -103,12 +103,12 @@ function createCard() {
         currentSlider = newSlider;
 
         petCard += `
-    <div class="pets-card">
-        <img class="pets-card__img" src="${pet.img}" alt="${pet.name}">
+    <div class="pets-card" data-name="${pet.name}">
+        <img class="pets-card__img" src="${pet.img}" alt="${pet.type}" data-name="${pet.name}">
         <p class="pets-card__name">
           ${pet.name}
         </p>
-        <button class="button secondary-btn">
+        <button class="button secondary-btn" data-name="${pet.name}">
           Learn more
         </button>
     </div>`;
@@ -131,46 +131,55 @@ prev.addEventListener('click', () => {
 
 /* Pop Up */
 
-const petCards = document.querySelectorAll('.pets-card');
+const cards = document.querySelectorAll('[data-name]');
+const modalButton = document.querySelector('.popup-button');
+const petWrapper = document.querySelector('.popup-wrapper');
+let petInfo = document.querySelector('.popup-block');
 
 function createPop(obj) {
-  const modalButton = document.querySelector('.popup-button');
-  const petWrapper = document.querySelector('.popup-wrapper');
-  let petInfo = document.querySelector('.popup-block');
-  petInfo.innerHTML =
-    `<div class="popup-block__item">
-                <img src="../../assets/images/pets-jennifer.png" alt="dog">
+  pets.forEach(pet => {
+    if (pet.name === obj.dataset.name) {
+      petInfo.innerHTML =
+        `<div class="popup-block__item inactive">
+                <img src="${pet.img}" alt="${pet.name}">
             </div>
             <div class="popup-block__item">
                 <div class="popup-content">
-                    <h3 class="popup-content__title">${obj.name}</h3>
-                    <h4>${obj.type} - ${obj.breed}</h4>
-                    <h5 class="popup-content__subtitle">${obj.description}</h5>
+                    <h3 class="popup-content__title">${pet.name}</h3>
+                    <h4>${pet.type} - ${pet.breed}</h4>
+                    <h5 class="popup-content__subtitle">${pet.description}</h5>
                     <ul class="popup-list">
                         <li class="popup-list__item">
-                            <div><b>Age: </b>${obj.age}</div>
+                            <div><b>Age: </b>${pet.age}</div>
                         </li>
                         <li class="popup-list__item">
-                            <div><b>Inoculations: </b>${obj.inoculations}</div>
+                            <div><b>Inoculations: </b>${pet.inoculations}</div>
                         </li>
                         <li class="popup-list__item">
-                            <div><b>Diseases: </b>${obj.diseases}</div>
+                            <div><b>Diseases: </b>${pet.diseases}</div>
                         </li>
                         <li class="popup-list__item">
-                            <div><b>Parasites: </b>${obj.parasites}</div>
+                            <div><b>Parasites: </b>${pet.parasites}</div>
                         </li>
                     </ul>
                 </div>
             </div>`;
+    }
+  });
   petWrapper.classList.add('active');
   lockPage();
+
   modalButton.addEventListener('click', () => {
     petWrapper.classList.remove('active');
     lockPage();
   });
 }
-petCards.forEach(petCard => petCard.addEventListener('click', () => {
-  createPop(petCard);
+
+cards.forEach(card => card.addEventListener('click', (event) => {
+  createPop(event.target);
+  console.log(event.target.dataset.name);
 }));
 
 /* Pop Up */
+
+
