@@ -82,6 +82,7 @@ popClosers.forEach(closer => {
   closer.addEventListener('click', () => {
   petWrapper.classList.remove('active');
   page.classList.remove('lock');
+  /* обертка наведение + закрытие */
 })});
 /* Pop Up */
 
@@ -127,19 +128,21 @@ window.addEventListener('resize', () => {
   createCard();
 });
 
+let newSlider = [];
+let currentSlider = localStorage.getItem('currentSlider') ? JSON.parse(localStorage.getItem('currentSlider')) : [];
+
 function createCard() {
   let petCard = "";
-
-  let newSlider = [];
-  let currentSlider = [];
+  
   for (let i = 0; i < sliderLength; i++) {
+    console.log(currentSlider);
     while (newSlider.length < sliderLength) {
       let number = Math.floor(Math.random() * pets.length);
       if (!newSlider.includes(pets[number]) && !currentSlider.includes(pets[number])) {
         let pet = pets[number];
         newSlider.push(pet);
-        currentSlider = newSlider;
-
+        
+        console.log(currentSlider);
         petCard += `
     <div class="pets-card" data-name="${pet.name}">
         <img class="pets-card__img" src="${pet.img}" alt="${pet.type}" data-name="${pet.name}">
@@ -152,7 +155,10 @@ function createCard() {
     </div>`;
       }
     }
+    console.log(currentSlider);
   }
+  currentSlider = newSlider;
+  localStorage.setItem('currentSlider', JSON.stringify(currentSlider));
   petsContainer.innerHTML = petCard;
   newSlider = [];
 
@@ -163,6 +169,8 @@ function createCard() {
     console.log(event.target.dataset.name);
     petWrapper.classList.add('active');
     page.classList.add('lock');
+
+    return currentSlider;
   }));
 }
 
@@ -170,10 +178,12 @@ createCard();
 
 next.addEventListener('click', () => {
   createCard();
+  /*анимация*/
 });
 
 prev.addEventListener('click', () => {
   createCard();
+  /*анимация*/
 });
 
 
