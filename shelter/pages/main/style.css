@@ -25,6 +25,42 @@
     --modal-bg: rgba(41, 41, 41, 0.6);
 }
 
+/* Animation */
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+/* Animation */
+
 /* Обнуление */
 
 * {
@@ -497,6 +533,15 @@ body {
 .slider__item {
     display: flex;
 }
+
+.slider__item.left {
+    animation: slideLeft  0.2s linear;; 
+}
+
+.slider__item.right {
+    animation: slideRight  0.2s linear;; 
+}
+
 .pets-card {
     background-color: var(--card-bg);
     width: 270px;
@@ -600,7 +645,7 @@ body {
     border: 2px solid var(--primary-hover);
 }*/
 
-.popup-button:hover {
+.popup-button.hover {
     background: var(--primary-hover);
     border: 2px solid var(--primary-hover);
 }
@@ -1518,13 +1563,3 @@ body {
         height: 100%;
     }
 }
-
-
-/*
-
-
-
-
-
-
-*/

@@ -26,7 +26,7 @@ const pets = [
     "img": "../../assets/images/pets-oliver.png",
     "type": "Dog",
     "breed": "Corgi Pembroke",
-    "description": "Oliver is a smart and funny playfull dog, likes sheepherding. He knows many comands and tricks to make watchers happy. Oliver is a reliable travel companion and socially oriented to people. His main live goal to make you happy.",
+    "description": "Oliver is a smart and funny playfull dog, likes sheepherding. He knows many comands and tricks to make watchers happy. Oliver is a reliable travel companion and socially oriented to people. His main live goal is to bring joy to you.",
     "age": "2 years",
     "inoculations": ["complex", "rabies"],
     "diseases": ["none"],
@@ -48,7 +48,7 @@ const pets = [
     "img": "../../assets/images/pets-nord.png",
     "type": "Dog",
     "breed": "Samoyed",
-    "description": "Nord...",
+    "description": "Nord is a very kind and sociable dog. He is very calm, likes chees and ready to sellt his soul for it. Nord is sociable to people and likes to play with other animals, knows some commands but stubborn to follow them",
     "age": "1 year",
     "inoculations": ["complex", "rabies"],
     "diseases": ["none"],
@@ -88,6 +88,17 @@ const pets = [
     "parasites": ["none"]
   },
   {
+    "name": "Bonchinche",
+    "img": "../../assets/images/pets-bonya.jpg",
+    "type": "Turtle",
+    "breed": "Trachemys scripta",
+    "description": "Bonya is a combat armored predatory turtle that destroys all obstacles in its path, does not like to swim, but eats only in water. He is friends with a cat, loves shrimp and sea fish. He likes to sleep in warm places and walk at night.",
+    "age": "5 years",
+    "inoculations": ["none"],
+    "diseases": ["none"],
+    "parasites": ["none"],
+  },
+  {
     "name": "Timmy",
     "img": "../../assets/images/pets-timmy.png",
     "type": "Cat",
@@ -97,6 +108,18 @@ const pets = [
     "inoculations": ["calicivirus", "viral rhinotracheitis"],
     "diseases": ["kidney stones"],
     "parasites": ["none"]
+  },
+  {
+    "name": "Senya",
+    "img": "../../assets/images/pets-senya.jpg",
+    "type": "Cat",
+    "breed": "Domestic cat",
+    "description":
+      "Senya is a wonderful gray cat who loves to play, hunt cats and parents. He is very smart and attached, every day at a certain time he waits for his parents from work looking out the window. Engaged in the creation of comfort and tranquility at home.",
+    "age": "2 years 11 months",
+    "inoculations": ["rabies vaccine"],
+    "diseases": ["none"],
+    "parasites": ["none"],
   },
   {
     "name": "Freddie",

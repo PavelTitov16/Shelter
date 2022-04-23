@@ -129,6 +129,10 @@ body {
     background-color: var(--color-base);
 }
 
+.shelter-page.lock {
+    overflow-y: hidden;
+}
+
 /* Header */
 .header-wrapper {
     position: sticky;

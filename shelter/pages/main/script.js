@@ -45,6 +45,7 @@ shdwBox.addEventListener('click', () => {
 const popClosers =  document.querySelectorAll('[data-type]');
 const petWrapper = document.querySelector('.popup-wrapper');
 let petInfo = document.querySelector('.popup-block');
+const popCloseBtn = document.querySelector('.popup-button');
 
 function createPop(obj) {
   pets.forEach(pet => {
@@ -84,6 +85,16 @@ popClosers.forEach(closer => {
   page.classList.remove('lock');
   /* обертка наведение + закрытие */
 })});
+
+document.addEventListener('mouseover', event => {
+
+  if (popClosers) {
+      popCloseBtn.classList.add('hover');
+  }
+  else if (!popClosers && petInfo) {
+      popCloseBtn.classList.remove('hover');
+  }
+})
 /* Pop Up */
 
 /* Slider */
@@ -177,13 +188,16 @@ function createCard() {
 createCard();
 
 next.addEventListener('click', () => {
+  petsContainer.classList.add("right");
   createCard();
-  /*анимация*/
 });
 
 prev.addEventListener('click', () => {
+  petsContainer.classList.add("left");
   createCard();
-  /*анимация*/
 });
 
-
+petsContainer.addEventListener("animationend", () => {
+  petsContainer.classList.remove("left");
+  petsContainer.classList.remove("right");
+})
