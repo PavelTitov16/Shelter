@@ -41,7 +41,7 @@ shdwBox.addEventListener('click', () => {
 /* Adaptive Menu */
 
 /* Pop Up */
-const popClosers =  document.querySelectorAll('[data-type]');
+const popClosers = document.querySelectorAll('[data-type]');
 const petWrapper = document.querySelector('.popup-wrapper');
 let petInfo = document.querySelector('.popup-block');
 const popCloseBtn = document.querySelector('.popup-button');
@@ -77,17 +77,18 @@ function createPop(obj) {
     }
   });
 }
-  
+
 popClosers.forEach(closer => {
   closer.addEventListener('click', () => {
-  petWrapper.classList.remove('active');
-  page.classList.remove('lock');
-  /* обертка наведение + закрытие */
-})});
+    petWrapper.classList.remove('active');
+    page.classList.remove('lock');
+    /* обертка наведение + закрытие */
+  })
+});
 /* Pop Up */
 
 //check
-const cards =  document.querySelectorAll('.pet-card');
+const cards = document.querySelectorAll('.pet-card');
 cards.forEach(card => card.addEventListener('click', (event) => {
   createPop(event.target);
   console.log(event.target.dataset.name);
@@ -98,7 +99,13 @@ cards.forEach(card => card.addEventListener('click', (event) => {
 /* Pagination */
 const slider = document.querySelector('.pets-block__slider');
 let cardsAmount = 0;
-let paginanion = [];
+let pagination = [];
+let pageCount = 1;
+const swipeL = document.getElementById('swipeL');
+const buttonLeft = document.getElementById('leftB');
+const pageNum = document.getElementById('pageNum');
+const buttonRight = document.getElementById('rightB');
+const swipeR = document.getElementById('swipeR');
 
 function loadScreen() {
   if (window.innerWidth >= 1280) {
@@ -118,23 +125,19 @@ window.addEventListener('resize', () => {
 
 
 
+let currentPage; /*= localStorage.getItem('currentPage') ? JSON.parse(localStorage.getItem('currentPage')) : [];
+pagination = localStorage.getItem('currentPage') ? JSON.parse(localStorage.getItem('currentPage')) : createPage();*/
+function createPage() {
+  for (let i = 1; i <= (48 / cardsAmount); i++) {
+    let newPage = [];
+  let cardSet = '';
+  while (newPage.length < cardsAmount) {
+    let number = Math.floor(Math.random() * pets.length);
+    if (!newPage.includes(pets[number]) ) {
+      let pet = pets[number];
+      newPage.push(pet);
 
-/* Pagination */
-
-
-let newPage = [];
-let currentPage = localStorage.getItem('currentPage') ? JSON.parse(localStorage.getItem('currentPage')) : [];
-
-function createPagination() {
-  
-  for (let i = 0; i < cardsAmount; i++) {
-    while (newPage.length < cardsAmount) {
-      let number = Math.floor(Math.random() * pets.length);
-      if (!newPage.includes(pets[number]) && !currentPage.includes(pets[number])) {
-        let pet = pets[number];
-        newPage.push(pet);
-        
-        slider.innerHTML += `
+      cardSet += `
     <div class="pet-card" data-name="${pet.name}">
         <img class="pets-card__img" src="${pet.img}" alt="${pet.type}" data-name="${pet.name}">
         <p class="pet-card__name">
@@ -144,24 +147,92 @@ function createPagination() {
           Learn more
         </button>
     </div>`;
-      }
     }
   }
-  currentPage = newPage;
-  localStorage.setItem('currentPage', JSON.stringify(currentPage));
 
-  newPage = [];
+pagination.push(newPage);
+currentPage = pagination[pageCount - 1];
+slider.innerHTML = cardSet;
+/*localStorage.setItem('currentPage', JSON.stringify(currentPage));*/
+/*;*/
+newPage = [];
 
-  const cards = document.querySelectorAll('[data-name]');
-  
-  cards.forEach(card => card.addEventListener('click', (event) => {
-    createPop(event.target);
-    console.log(event.target.dataset.name);
-    petWrapper.classList.add('active');
-    page.classList.add('lock');
+const cards = document.querySelectorAll('[data-name]');
 
-    return currentSlider;
-  }));
+cards.forEach(card => card.addEventListener('click', (event) => {
+  createPop(event.target);
+  console.log(event.target.dataset.name);
+  petWrapper.classList.add('active');
+  page.classList.add('lock');
+
+  return currentSlider;
+}));
+
+}
+}
+createPage();
+
+swipeL.addEventListener('click', () => {
+  if (pageCount > 1) {
+  pageCount = 1;
+  pageNum.textContent = pageCount;
+  createPage();
+  slider.classList.add("left");
+  }
+});
+
+buttonLeft.addEventListener('click', () => {
+  if (pageCount > 1) {
+  pageCount--;
+  pageNum.textContent = pageCount;
+  slider.classList.add("left");
+  createPage();
+  }
+});
+
+buttonRight.addEventListener('click', () => {
+  if (pageCount < (48 / cardsAmount) ) {
+  pageCount++;
+  pageNum.textContent = pageCount;
+  slider.classList.add("right");
+  createPage();
+}});
+
+
+swipeR.addEventListener('click', () => {
+  console.log(pageCount);
+  if (pageCount < (48 / cardsAmount) ) {
+  pageCount = (48 / cardsAmount);
+  pageNum.textContent = pageCount;
+  slider.classList.add("right");
+  createPage();
+  }
+});
+
+slider.addEventListener("animationend", () => {
+  slider.classList.remove("left");
+  slider.classList.remove("right");
+});
+
+
+/* Pagination */
+function checkValidity() {
+  if (pageCount === (48 / cardsAmount) ) {
+    buttonRight.classList.add('inactive');
+    swipeR.classList.add('inactive');
+  } else if (pageCount === 1) { 
+    buttonLeft.classList.add('inactive');
+    swipeL.classList.add('inactive');
+  } else {
+    buttonLeft.classList.remove('inactive');
+    swipeL.classList.remove('inactive');
+    buttonRight.classList.remove('inactive');
+    swipeR.classList.remove('inactive');
+  }
 }
 
-createPagination();
+checkValidity();
+  
+    
+   
+
