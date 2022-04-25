@@ -19,7 +19,7 @@ function closeMenu() {
   adaptiveMenu.classList.remove('active');
   nav.classList.remove('active');
   shdwBox.classList.remove('active');
-  lockPage();
+  page.classList.remove('lock');
 }
 
 adaptiveMenu.addEventListener('click', () => {
@@ -129,13 +129,7 @@ function loadScreen() {
 loadScreen();
 
 window.addEventListener('resize', () => {
-  if (window.innerWidth >= 1220) {
-    sliderLength = 3;
-  } else if (window.innerWidth < 1220 && window.innerWidth > 730) {
-    sliderLength = 2;
-  } else {
-    sliderLength = 1;
-  }
+  loadScreen();
   createCard();
 });
 
@@ -189,15 +183,15 @@ createCard();
 
 next.addEventListener('click', () => {
   petsContainer.classList.add("right");
-  createCard();
+  setTimeout(createCard, 300);
 });
 
 prev.addEventListener('click', () => {
   petsContainer.classList.add("left");
-  createCard();
+  setTimeout(createCard, 300);
 });
 
 petsContainer.addEventListener("animationend", () => {
   petsContainer.classList.remove("left");
   petsContainer.classList.remove("right");
-})
+});

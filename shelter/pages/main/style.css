@@ -26,33 +26,33 @@
 }
 
 /* Animation */
+@keyframes slideRight {
+  from {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-116%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(116%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
 @keyframes slideLeft {
   from {
     transform: translateX(0);
   }
   25% {
-    transform: translateX(-100px);
+    transform: translateX(116%);
     opacity: 0;
   }
   50% {
-    transform: translateX(100px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideRight {
-  from {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(100px);
-    opacity: 0;
-  }
-  50% {
-    transform: translateX(-100px);
+    transform: translateX(-116%);
     opacity: 0;
   }
   to {
@@ -165,6 +165,7 @@ html {
 body {
     margin: 0 auto;
     background-color: var(--color-base);
+    overflow-x: hidden;
 }
 
 .shelter-page.lock {
@@ -535,11 +536,11 @@ body {
 }
 
 .slider__item.left {
-    animation: slideLeft  0.2s linear;; 
+    animation: slideLeft  0.6s linear;; 
 }
 
 .slider__item.right {
-    animation: slideRight  0.2s linear;; 
+    animation: slideRight  0.6s linear;; 
 }
 
 .pets-card {
@@ -556,6 +557,9 @@ body {
     cursor: pointer;
 }
 
+.pets-card img {
+    border-radius: 9px 9px 0 0;
+}
 .pets-card:hover {
     box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
     background-color: var(--color-base);
@@ -729,7 +733,6 @@ body {
     display: block;
     color: var(--primary-normal);
 }
-
 /* Pop-Up */
 
 /* Help*/
@@ -1352,6 +1355,7 @@ body {
     .slider__item {
         order: -1;
     }
+
     .pets-card {
         margin: 0;
         margin-top: 42px;
@@ -1393,6 +1397,7 @@ body {
     .popup-list__item {
         margin-top: 3px;
     }
+    
     .secondary-btn {
         margin: 0;
     }
