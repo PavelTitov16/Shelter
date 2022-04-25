@@ -174,12 +174,14 @@ function createCard() {
     console.log(event.target.dataset.name);
     petWrapper.classList.add('active');
     page.classList.add('lock');
-
-    return currentSlider;
   }));
 }
 
 createCard();
+
+function prevSlide() {
+  currentSlider = localStorage.getItem('currentSlider') ? JSON.parse(localStorage.getItem('currentSlider')) : createCard();
+}
 
 next.addEventListener('click', () => {
   petsContainer.classList.add("right");
@@ -188,7 +190,7 @@ next.addEventListener('click', () => {
 
 prev.addEventListener('click', () => {
   petsContainer.classList.add("left");
-  setTimeout(createCard, 300);
+  setTimeout(prevSlide, 300);
 });
 
 petsContainer.addEventListener("animationend", () => {
