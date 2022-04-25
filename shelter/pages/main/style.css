@@ -671,6 +671,7 @@ body {
 .popup-block__item{
     width: 500px;
     height: 500px;
+    overflow: auto;
 }
 
 .popup-block__item img {
@@ -681,6 +682,7 @@ body {
 .popup-content {
     margin: 50px 20px 88px 30px;
     text-align: left;
+    overflow-y: auto;
 }
 
 .popup-content__title {
@@ -1397,7 +1399,7 @@ body {
     .popup-list__item {
         margin-top: 3px;
     }
-    
+
     .secondary-btn {
         margin: 0;
     }

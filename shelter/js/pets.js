@@ -21,7 +21,7 @@ const pets = [
     "diseases": ["none"],
     "parasites": ["none"]
   },
-  {
+  /*{
     "name": "Oliver",
     "img": "../../assets/images/pets-oliver.png",
     "type": "Dog",
@@ -31,7 +31,7 @@ const pets = [
     "inoculations": ["complex", "rabies"],
     "diseases": ["none"],
     "parasites": ["none"]
-  },
+  },*/
   {
     "name": "Woody",
     "img": "../../assets/images/pets-woody.png",
@@ -43,7 +43,7 @@ const pets = [
     "diseases": ["right back leg mobility reduced"],
     "parasites": ["none"]
   },
-  {
+  /*{
     "name": "Nord",
     "img": "../../assets/images/pets-nord.png",
     "type": "Dog",
@@ -53,7 +53,7 @@ const pets = [
     "inoculations": ["complex", "rabies"],
     "diseases": ["none"],
     "parasites": ["none"]
-  },
+  },*/
   {
     "name": "Scarlett",
     "img": "../../assets/images/pets-scarlet.png",
@@ -65,7 +65,7 @@ const pets = [
     "diseases": ["none"],
     "parasites": ["none"]
   },
-  {
+  /*{
     "name": "Kapusta",
     "img": "../../assets/images/pets-cabbage.png",
     "type": "Cat",
@@ -75,7 +75,7 @@ const pets = [
     "inoculations": ["complex", "rabies"],
     "diseases": ["none"],
     "parasites": ["none"]
-  },
+  },*/
   {
     "name": "Katrine",
     "img": "../../assets/images/pets-katrine.png",
@@ -87,7 +87,7 @@ const pets = [
     "diseases": ["none"],
     "parasites": ["none"]
   },
-  {
+  /*{
     "name": "Bonchinche",
     "img": "../../assets/images/pets-bonya.jpg",
     "type": "Turtle",
@@ -97,7 +97,7 @@ const pets = [
     "inoculations": ["none"],
     "diseases": ["none"],
     "parasites": ["none"],
-  },
+  },*/
   {
     "name": "Timmy",
     "img": "../../assets/images/pets-timmy.png",
@@ -109,7 +109,7 @@ const pets = [
     "diseases": ["kidney stones"],
     "parasites": ["none"]
   },
-  {
+  /*{
     "name": "Senya",
     "img": "../../assets/images/pets-senya.jpg",
     "type": "Cat",
@@ -120,7 +120,7 @@ const pets = [
     "inoculations": ["rabies vaccine"],
     "diseases": ["none"],
     "parasites": ["none"],
-  },
+  },*/
   {
     "name": "Freddie",
     "img": "../../assets/images/pets-freddie.png",

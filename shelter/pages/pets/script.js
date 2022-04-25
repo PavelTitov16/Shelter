@@ -94,3 +94,74 @@ cards.forEach(card => card.addEventListener('click', (event) => {
   petWrapper.classList.add('active');
   page.classList.add('lock');
 }));
+
+/* Pagination */
+const slider = document.querySelector('.pets-block__slider');
+let cardsAmount = 0;
+let paginanion = [];
+
+function loadScreen() {
+  if (window.innerWidth >= 1280) {
+    cardsAmount = 8;
+  } else if (window.innerWidth < 1280 && window.innerWidth > 767) {
+    cardsAmount = 6;
+  } else {
+    cardsAmount = 3;
+  }
+  return cardsAmount;
+}
+loadScreen();
+
+window.addEventListener('resize', () => {
+  loadScreen();
+});
+
+
+
+
+/* Pagination */
+
+
+let newPage = [];
+let currentPage = localStorage.getItem('currentPage') ? JSON.parse(localStorage.getItem('currentPage')) : [];
+
+function createPagination() {
+  
+  for (let i = 0; i < cardsAmount; i++) {
+    while (newPage.length < cardsAmount) {
+      let number = Math.floor(Math.random() * pets.length);
+      if (!newPage.includes(pets[number]) && !currentPage.includes(pets[number])) {
+        let pet = pets[number];
+        newPage.push(pet);
+        
+        slider.innerHTML += `
+    <div class="pet-card" data-name="${pet.name}">
+        <img class="pets-card__img" src="${pet.img}" alt="${pet.type}" data-name="${pet.name}">
+        <p class="pet-card__name">
+          ${pet.name}
+        </p>
+        <button class="pet-card__btn" data-name="${pet.name}">
+          Learn more
+        </button>
+    </div>`;
+      }
+    }
+  }
+  currentPage = newPage;
+  localStorage.setItem('currentPage', JSON.stringify(currentPage));
+
+  newPage = [];
+
+  const cards = document.querySelectorAll('[data-name]');
+  
+  cards.forEach(card => card.addEventListener('click', (event) => {
+    createPop(event.target);
+    console.log(event.target.dataset.name);
+    petWrapper.classList.add('active');
+    page.classList.add('lock');
+
+    return currentSlider;
+  }));
+}
+
+createPagination();
