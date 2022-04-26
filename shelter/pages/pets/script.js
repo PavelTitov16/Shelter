@@ -124,8 +124,6 @@ window.addEventListener('resize', () => {
   createPage();
 });
 
-
-
 let currentPage; /*= localStorage.getItem('currentPage') ? JSON.parse(localStorage.getItem('currentPage')) : [];
 pagination = localStorage.getItem('currentPage') ? JSON.parse(localStorage.getItem('currentPage')) : createPage();*/
 function createPage() {
@@ -197,7 +195,6 @@ buttonRight.addEventListener('click', () => {
   setTimeout(createPage, 320);
 }});
 
-
 swipeR.addEventListener('click', () => {
   console.log(pageCount);
   if (pageCount < (48 / cardsAmount) ) {
@@ -214,8 +211,6 @@ slider.addEventListener("animationend", () => {
   checkValidity();
 });
 
-
-/* Pagination */
 function checkValidity() {
   if (pageCount === (48 / cardsAmount) ) {
     buttonRight.classList.add('inactive');
@@ -237,6 +232,4 @@ function checkValidity() {
 
 checkValidity();
   
-    
-   
-
+/* Pagination */
