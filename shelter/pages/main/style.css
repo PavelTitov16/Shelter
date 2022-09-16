@@ -352,8 +352,6 @@ body {
     margin-top: 165px;
 }
 
-/* //TODO Oliver.jpg positions for mobile devices */
-
 .hero-block__image {
     max-width: 820px;
     overflow: hidden;
@@ -568,6 +566,7 @@ body {
 .pets-card img {
     border-radius: 9px 9px 0 0;
 }
+
 .pets-card:hover {
     box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
     background-color: var(--color-base);
@@ -985,11 +984,10 @@ body {
     .button {
         margin: 40px 10px 0 125px;
     }
-
-    .hero-block__image {
-        height: 55%;
-        width: auto;
-        padding-left: 3rem;
+    
+    .hero-block__img {
+        height: 1100px;
+        margin-right: 60px;
     }
 
     .about-container {
@@ -1022,7 +1020,6 @@ body {
 
     .pets-block__slider {
         display: flex;
-
     }
 
     .pets-card {
@@ -1132,6 +1129,7 @@ body {
         margin: 0 18px;
         padding: 0 6px;
     }
+
     .maps {
         width: 315px;
         padding-right: 0;
@@ -1167,17 +1165,6 @@ body {
     .header-menu.active {
         transform: rotate(-90deg);
     }
-    /*.header-menu.active .header-menu__bar:nth-child(2) {
-        transform: translateX(-10px) rotate(-90deg);
-    }
-
-    .header-menu.active .header-menu__bar:nth-child(1) {
-        transform: translateY(10px) rotate(-90deg);
-    }
-
-    .header-menu.active .header-menu__bar:nth-child(3) {
-        transform: translateX(10px) translateY(-10px) rotate(-90deg);
-    }*/
 
     .shadow-box.active {
         background:#000;
@@ -1236,7 +1223,7 @@ body {
     }
 
     .hero-block {
-        margin: 0 55px 70px 55px;
+        margin: 0 55px 30px 55px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1260,9 +1247,8 @@ body {
         margin: 0;
     }
 
-    .hero-block__image {
-        padding-left: 1.5rem;
-        height: 45%;
+    .hero-block__img {
+        height: 620px;
     }
 
     .about-container {
